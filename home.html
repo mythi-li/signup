@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="asset/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+	<style type="text/css">
+	nav ul 
+	{
+	  list-style: none;
+	  display: flex;
+	}
+
+	nav ul li 
+	{
+	  margin-right: 40px;
+	  font-size: 20px;
+	}
+
+	nav ul li a
+	{
+	  text-decoration: none;
+	}
+	i
+	{
+		font-size:20px;
+	}
+	a
+	{
+		text-decoration: none;
+	}
+	#navtxt
+	{
+		color: white;
+		padding-top: 5px;
+	}
+	#logo
+	{
+		color:white;
+	}
+	#btn
+	{
+		background-color:#4182C4 
+	}
+	#login
+	{
+		background-color: #BB77C4;
+		border-color:#C5C3F4 ;
+	}
+	#reg
+	{
+		color:#6A6FA6 ;
+	}
+	.input-control.success input
+	{
+		border-color: #09c372;
+	}
+	.input-control.error input
+	{
+		border-color: #ff3860;
+	}
+	
+	
+</style>
+
+</head>
+<body>
+
+
+	
+	<div id="sec2" class="container-fluid p-1 d-flex" style="background-color:#BB77C4">
+		<div class="d-inline-flex text-white  p-1 ms-2 me-3"><i class="bi bi-envelope-fill text-white me-1"></i>MYTHILI</div>
+		<div class="d-inline-flex  text-white  p-1 ms-2 me-3"><i class="bi bi-telephone-fill text-white me-1"></i>+91 7200872300</div>
+		<div class="d-inline-flex text-white ms-auto p-1 ms-2 me-2"><i class="bi bi-geo-alt-fill text-white me-2"></i>Coimbatore</div>
+	</div>
+	
+<section id="sec2">
+	<nav class="navbar bg-body-tertiary p-0">
+  		<div id="navbar" class="container-fluid bg-gradient p-1" style="background-color:#4182C4">
+    		<a id="logo" class="navbar-brand me-auto fw-bold ms-2" href="#"><h4>WEBSITE</h4></a>
+			<nav id="navbar" class="navbar">
+				<ul>
+				  <li><a class="nav-link active" href="#header">Home</a></li>
+				  <li><a class="nav-link" href="#about">About</a></li>
+				  <li><a class="nav-link" href="#resume">Resume</a></li>
+				  <li><a class="nav-link" href="#contact">Contact</a></li>
+				</ul>
+				<i class="bi bi-list mobile-nav-toggle"></i>
+			  </nav>
+
+			    <button class="navbar-toggler d-block d-sm-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+			      <span class="navbar-toggler-icon text-white"></span>
+			    </button>
+			    <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
+			    <div class="offcanvas-header">
+			    <h3 class="offcanvas-title" id="offcanvasNavbarLabel">WEBSITE</h3>
+			        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			      </div>
+			      <div class="offcanvas-body">
+			        <ul class="navbar-nav justify-content-end">
+			          <li class="nav-item">
+			            <a class="nav-link active" aria-current="page" href="#">Home</a>
+			          </li>
+			          <li class="nav-item">
+			            <a class="nav-link" href="#">About</a>
+			          </li>
+			          <li class="nav-item">
+			            <a class="nav-link" href="#">Services</a>
+			          </li>
+			          <li class="nav-item">
+			            <a class="nav-link" href="#">Courses</a>
+			          </li>
+			          <li class="nav-item">
+			            <a class="nav-link" href="#">Events</a>
+			          </li>
+			        </ul>
+			      </div>
+			    </div>
+			  </div>
+			</nav>
+		</section>
+
+	<section>
+		<div class="row d-flex justify-content-center align-items-center">
+          <div class="col-md-9 col-lg-6 col-xl-6 my-lg-5 py-lg-5 d-none d-md-block">
+            <img src="asset/image/img_1.jpg" class="img-fluid" alt="Sample image">
+          </div>
+      
+	      <div class="col-md-3">
+	      	<form>
+	      		<div class="d-flex flex-row align-items-center justify-content-center  mb-4">
+		      		<p class="me-4  fs-4 mb-4">Sign in with</p>
+		      		<button id="btn" type="button" class="btn btn-primary rounded-pill me-4 mb-4 fs-5"><i class="fab fa-facebook-f"></i></button>
+		      		<button id="btn" type="button" class="btn btn-primary rounded-circle me-4  mb-4 fs-5 "><i class="fab fa-twitter"></i></button>
+		      		<button id="btn" type="button" class="btn btn-primary rounded-circle mb-4 fs-5"><i class="fab fa-linkedin-in"></i></button>
+		      	</div>
+		      	
+		      		
+
+              <div class="mb-4 justify-content-center justify-content-xs-center">
+                <input  type="email" id="mail" name="mail"class="form-control form-control-lg mb-4 mt-4" placeholder="Email address">
+                <input onkeyup="validate()" type="email" id="pass" name="pass" class="form-control form-control-lg mb-4 mt-4" placeholder="Password">
+               </div>
+               <div>
+               	<ul type="">
+               		<li style="color:red;" id="list1">Password must be 8 characters</li>
+               		<li style="color:red;" id="list2">Password must be less than 12 character</li>
+               		<li style="color:red;" id="list3">Email and password cannot be same</li>
+               		
+               	</ul>
+               </div>
+
+               
+
+               	<div class="d-flex justify-content-between align-items-center">
+                <div class="form-check mb-0">
+
+                  <input  class="form-check-input me-1 fs-5" type="checkbox" id="form2Example3">
+                  <label class="form-check-label fs-5" for="form2Example3">
+                    Remember me
+                  </label>
+                </div>
+                <a href="#!" id="reg" class="fs-5" >Forgot password?</a>
+              </div>
+
+               <div class="text-center text-lg-start mt-4 pt-2">
+                <button id="login" type="button" class="btn btn-primary bg-gradient" style="padding-left: 2.5rem; padding-right: 2.5rem;" >LOGIN</button>
+                <button type="button" class="btn btn-primary ms-4 bg-gradient" style="background-color:#4182C4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+								  Privacy and Policy
+								</button>
+
+								<!-- Modal -->
+								<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								  <div class="modal-dialog">
+								    <div class="modal-content">
+								      <div class="modal-header">
+								        <h1 class="modal-title fs-5" id="exampleModalLabel">Terms and Conditions</h1>
+								        <button  type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								      </div>
+								      <div class="modal-body">
+								        <p>Welcome to our Website!</p>
+													<p>These terms and conditions outline the rules and regulations for the use of Company Name's Website, located at Website.com.
+													By accessing this website we assume you accept these terms and conditions. Do not continue to use Website if you do not agree to take all of the terms and conditions stated on this page.
+												</p>
+								      </div>
+								      <div class="modal-footer">
+								        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Accept</button>
+								        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Decline</button>
+								      </div>
+								    </div>
+								  </div>
+								</div>
+                <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!" id="reg">Register</a></p>
+              </div>
+	      	</form>
+	      </div>
+
+      </div>
+      
+      
+	</section>
+	<script>
+    window.onload = function() {
+      alert("Page Loading... Please Wait!!!");
+    };
+    $(document).ready(function()
+    {
+    	var password= $("#pass").val();
+     $("#pass").keypress(function({
+     	$("#list").text()
+     })
+     {
+
+     });
+    });
+    
+
+
+  </script>
+<script src="asset/bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>
